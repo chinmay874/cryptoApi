@@ -27,13 +27,13 @@ export default function Api() {
     <div className={styles.Api}>
       <h1>Top 100 Cryptocurrency Coins with max change</h1>
       <div className={styles.list}>
-        <ul>
+        <ol>
         {coins.map((coin,i) => (
           <li key={i*10}>
             <div className={styles.coins}><strong>{coin.exchangeId}</strong> ({coin.baseSymbol}): ${coin.priceUsd}</div>
           </li>
         ))}
-      </ul>
+      </ol>
       </div>
     </div>
   );
